@@ -482,3 +482,69 @@ p:last-child { margin-bottom: 0; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .step-arrow { padding-left: 19px; }
 }
+
+/* ---------- Animations ---------- */
+/* Hero entrance on load: staggered fade-up, pure CSS. */
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero .breadcrumb,
+.hero .hero-bismillah,
+.hero h1,
+.hero .hero-tagline,
+.hero .hero-cta,
+.hero .hero-meta {
+  animation: hero-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.hero .breadcrumb { animation-delay: 0s; }
+.hero .hero-bismillah { animation-delay: 0.05s; }
+.hero h1 { animation-delay: 0.15s; }
+.hero .hero-tagline { animation-delay: 0.28s; }
+.hero .hero-cta { animation-delay: 0.4s; }
+.hero .hero-meta { animation-delay: 0.52s; }
+
+/* Slow drift of the Islamic pattern in the hero and CTA band. */
+@keyframes pattern-drift {
+  from { background-position: 0 0; }
+  to { background-position: 72px 72px; }
+}
+.hero,
+.cta-band {
+  animation: pattern-drift 60s linear infinite;
+}
+
+/* Scroll reveal (JS adds .revealed via IntersectionObserver).
+   The hidden state applies ONLY when JS is active (html.js) — without
+   JS everything stays visible, so content can never get stuck invisible. */
+html.js .reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: opacity, transform;
+}
+html.js .reveal.revealed { opacity: 1; transform: translateY(0); }
+
+/* Hover polish */
+.gallery-item img { transition: transform 0.5s ease; }
+.gallery-item:hover img { transform: scale(1.05); }
+.notice-item { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.notice-item:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.info-item { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.info-item:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.branch { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.branch:hover { transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+
+/* Respect users who prefer reduced motion: no animation, everything visible. */
+@media (prefers-reduced-motion: reduce) {
+  .hero .breadcrumb,
+  .hero .hero-bismillah,
+  .hero h1,
+  .hero .hero-tagline,
+  .hero .hero-cta,
+  .hero .hero-meta,
+  .hero,
+  .cta-band { animation: none; }
+  html.js .reveal { opacity: 1; transform: none; transition: none; }
+  .gallery-item img, .notice-item, .info-item, .branch, .card, .btn { transition: none; }
+}
