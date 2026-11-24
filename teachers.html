@@ -32,141 +32,168 @@
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/academic.css">
-<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
- <!-- Header & Navigation -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <div class="logo-img">
-                 <a href="index.html"><img src="assets/images/logo.svg" alt="মারকাযুন-নূর মাদ্রাসার লোগো"></a>
-                </div>
-                <div class="logo-text">মারকাযুন-নূর মাদ্রাসা</div>
-            </div>
-            <div class="mobile-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+<!-- Top bar -->
+<div class="topbar">
+    <div class="container">
+        <div class="topbar-left">
+            <span><i class="fas fa-phone-alt"></i><a href="tel:+880186261243">+৮৮০১৮৬২৬১২৪৩</a></span>
+            <span><i class="fas fa-envelope"></i><a href="mailto:markazunnur@gmail.com">markazunnur@gmail.com</a></span>
+        </div>
+        <div class="topbar-right">
+            <span><i class="fas fa-clock"></i>শনি–বৃহস্পতি: সকাল ৮:০০–বিকাল ৫:০০</span>
+            <span>শুক্রবার বন্ধ</span>
+        </div>
+    </div>
+</div>
+<!-- Header & Navigation -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="brand">
+            <img src="assets/images/logo.svg" alt="মারকাযুন-নূর মাদ্রাসার লোগো">
+            <span>
+                <span class="brand-name">মারকাযুন-নূর</span><br>
+                <span class="brand-sub">মহিলা মাদ্রাসা ও নূরানী কিন্ডারগার্টেন</span>
+            </span>
+        </a>
+        <button class="nav-toggle" aria-label="মেনু খুলুন" aria-expanded="false"><i class="fas fa-bars"></i></button>
+        <nav aria-label="প্রধান মেনু">
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">হোম</a></li>
                 <li><a href="about.html" class="nav-link">আমাদের সম্পর্কে</a></li>
-                <li><a href="index.html#courses" class="nav-link">শিক্ষা কার্যক্রম</a></li>
                 <li><a href="academic-programs.html" class="nav-link">পাঠক্রম</a></li>
-                <li><a href="teachers.html" class="nav-link active">শিক্ষক পরিচিতি</a></li>
                 <li><a href="admission.html" class="nav-link">ভর্তি তথ্য</a></li>
-                <li><a href="notice.html" class="nav-link">নোটিস বোর্ড</a></li>
+                <li><a href="fees.html" class="nav-link">ফি</a></li>
+                <li><a href="teachers.html" class="nav-link active">শিক্ষক</a></li>
+                <li><a href="notice.html" class="nav-link">নোটিস</a></li>
                 <li><a href="gallery.html" class="nav-link">গ্যালারি</a></li>
+                <li><a href="faq.html" class="nav-link">জিজ্ঞাসা</a></li>
                 <li><a href="contact.html" class="nav-link">যোগাযোগ</a></li>
             </ul>
-        </div>
-    </header>
-    <!-- Page Hero -->
-    <section class="ac-hero">
-        <div class="hero-bg islamic-pattern"></div>
-        <div class="ac-hero-content">
-            <nav class="ac-breadcrumb" aria-label="ব্রেডক্রাম্ব">
-                <a href="index.html">হোম</a>
-                <span aria-hidden="true">/</span>
-                <span aria-current="page">শিক্ষক পরিচিতি</span>
-            </nav>
-            <h1 class="ac-hero-title">শিক্ষক পরিচিতি</h1>
-            <p class="ac-hero-subtitle">অভিজ্ঞ শিক্ষক/শিক্ষিকা দ্বারা পরিচালিত — আমাদের শিক্ষকমণ্ডলী।</p>
-        </div>
-    </section>
+        </nav>
+    </div>
+</header>
+<!-- Page Hero -->
+<section class="hero page-hero">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="ব্রেডক্রাম্ব">
+            <a href="index.html">হোম</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">শিক্ষক পরিচিতি</span>
+        </nav>
+        <h1>শিক্ষক পরিচিতি</h1>
+        <p class="hero-tagline">অভিজ্ঞ শিক্ষক/শিক্ষিকা দ্বারা পরিচালিত — আমাদের শিক্ষকমণ্ডলী।</p>
+    </div>
+</section>
 
-    <section class="ac-section">
-        <h2 class="section-title">আমাদের শিক্ষকমণ্ডলী</h2>
-        <p class="ac-intro">ইসলামী শিক্ষা ও আধুনিক শিক্ষার সমন্বয়ে শিক্ষার্থীদের গড়ে তুলছেন আমাদের অভিজ্ঞ শিক্ষকগণ।</p>
-        <div class="teachers-container">
-            <div class="teacher-card">
-                <div class="teacher-img">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
-                <h3 class="teacher-name">মুফতি মুঈনুদ্দীন</h3>
-                <p class="teacher-subject">প্রতিষ্ঠাতা/পরিচালক</p>
-                <p>০৭ বছরের অভিজ্ঞতা। দারুল উলুম হারিনাল গাজীপুর থেকে স্নাতক। ইফতাহ ২০১৯ ব্যাজ।</p>
-            </div>
-            <div class="teacher-card">
-                <div class="teacher-img">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
-                <h3 class="teacher-name">মুফতী রাশিদুল ইসলাম</h3>
-                <p class="teacher-subject">প্রতিষ্ঠাতা/মোহতামীম</p>
-                <p>০৭ বছরের অভিজ্ঞতা। দারুল উলুম হারিনাল গাজীপুর থেকে স্নাতক। ইফতাহ ২০১৯ ব্যাজ।</p>
-            </div>
-            <div class="teacher-card">
-                <div class="teacher-img">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
-                <h3 class="teacher-name">মুফতী উসমান গনি</h3>
-                <p class="teacher-subject">বিভাগীয় প্রধান</p>
-                <p>০১ বছরের অভিজ্ঞতা। দারুল উলুম হারিনাল গাজীপুর থেকে স্নাতক। ইফতাহ ২০২৪ ব্যাজ।</p>
-            </div>
-            <div class="teacher-card">
-                <div class="teacher-img">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
-                <h3 class="teacher-name">আলেমা তাকিয়া আক্তার</h3>
-                <p class="teacher-subject">প্রধান শিক্ষিকা</p>
-                <p>০৬ বছরের অভিজ্ঞতা। গোলাবাড়ী মহিলা মাদ্রাসা মধুপুর থেকে স্নাতক।</p>
-            </div>
+<section class="section">
+    <div class="container">
+        <div class="section-head text-center">
+            <p class="eyebrow centered">শিক্ষকমণ্ডলী</p>
+            <h2 class="section-title centered">আমাদের শিক্ষকগণ</h2>
+            <div class="title-rule centered"></div>
+            <p class="section-intro centered">ইসলামী শিক্ষা ও আধুনিক শিক্ষার সমন্বয়ে শিক্ষার্থীদের গড়ে তুলছেন আমাদের অভিজ্ঞ শিক্ষকগণ।</p>
         </div>
-        <div class="ac-disclaimer">
+        <div class="grid grid-4">
+            <article class="card teacher-card">
+                <div class="teacher-avatar"><i class="fas fa-user-graduate"></i></div>
+                <h3>মুফতি মুঈনুদ্দীন</h3>
+                <p class="teacher-role">প্রতিষ্ঠাতা/পরিচালক</p>
+                <p>০৭ বছরের অভিজ্ঞতা। দারুল উলুম হারিনাল গাজীপুর থেকে স্নাতক। ইফতাহ ২০১৯ ব্যাজ।</p>
+            </article>
+            <article class="card teacher-card">
+                <div class="teacher-avatar"><i class="fas fa-user-graduate"></i></div>
+                <h3>মুফতী রাশিদুল ইসলাম</h3>
+                <p class="teacher-role">প্রতিষ্ঠাতা/মোহতামীম</p>
+                <p>০৭ বছরের অভিজ্ঞতা। দারুল উলুম হারিনাল গাজীপুর থেকে স্নাতক। ইফতাহ ২০১৯ ব্যাজ।</p>
+            </article>
+            <article class="card teacher-card">
+                <div class="teacher-avatar"><i class="fas fa-user-graduate"></i></div>
+                <h3>মুফতী উসমান গনি</h3>
+                <p class="teacher-role">বিভাগীয় প্রধান</p>
+                <p>০১ বছরের অভিজ্ঞতা। দারুল উলুম হারিনাল গাজীপুর থেকে স্নাতক। ইফতাহ ২০২৪ ব্যাজ।</p>
+            </article>
+            <article class="card teacher-card">
+                <div class="teacher-avatar"><i class="fas fa-user-graduate"></i></div>
+                <h3>আলেমা তাকিয়া আক্তার</h3>
+                <p class="teacher-role">প্রধান শিক্ষিকা</p>
+                <p>০৬ বছরের অভিজ্ঞতা। গোলাবাড়ী মহিলা মাদ্রাসা মধুপুর থেকে স্নাতক।</p>
+            </article>
+        </div>
+        <div class="note-box">
             <h3><i class="fas fa-circle-info"></i> শীঘ্রই আসছে</h3>
             <p>শিক্ষকদের ছবি ও বিস্তারিত জীবনী পাওয়া গেলে এখানে যুক্ত করা হবে।</p>
         </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-col">
+    </div>
+</section>
+<!-- CTA -->
+<section class="cta-band">
+    <div class="container">
+        <h2>আমাদের পাঠক্রম সম্পর্কে জানুন</h2>
+        <p>শিক্ষকদের পরিচালনায় প্রাক-প্রাথমিক থেকে প্রাথমিক স্তর পর্যন্ত আমাদের পাঠক্রম দেখুন।</p>
+        <div class="cta-buttons">
+            <a href="academic-programs.html" class="btn btn-accent">পাঠক্রম দেখুন</a>
+            <a href="admission.html" class="btn btn-outline">ভর্তি তথ্য</a>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
                 <h3>মারকাযুন-নূর মহিলা মাদ্রাসা ও নূরানী কিন্ডারগার্টেন</h3>
-                <p>ইসলামী শিক্ষা ও নৈতিক মূল্যবোধের সমন্বয়ে গড়ে উঠা একটি আধুনিক শিক্ষাপ্রতিষ্ঠান। ২০২৫ সাল থেকে নিরলসভাবে ইসলামী শিক্ষা বিস্তারে কাজ করে যাচ্ছে।</p>
+                <p>ইসলামী শিক্ষা ও নৈতিক মূল্যবোধের সমন্বয়ে গড়ে উঠা একটি আধুনিক শিক্ষাপ্রতিষ্ঠান। ২০২৫ সাল থেকে কুরআন-সুন্নাহ ভিত্তিক শিক্ষা বিস্তারে কাজ করে যাচ্ছে।</p>
             </div>
-            <div class="footer-col">
+            <div>
                 <h3>দ্রুত লিংক</h3>
                 <ul class="footer-links">
                     <li><a href="index.html">হোম</a></li>
                     <li><a href="about.html">আমাদের সম্পর্কে</a></li>
-                    <li><a href="index.html#courses">শিক্ষা কার্যক্রম</a></li>
                     <li><a href="academic-programs.html">পাঠক্রম</a></li>
-                    <li><a href="teachers.html">শিক্ষক পরিচিতি</a></li>
                     <li><a href="admission.html">ভর্তি তথ্য</a></li>
-                    <li><a href="notice.html">নোটিস বোর্ড</a></li>
+                    <li><a href="fees.html">ফি</a></li>
+                    <li><a href="teachers.html">শিক্ষক</a></li>
+                    <li><a href="notice.html">নোটিস</a></li>
                     <li><a href="gallery.html">গ্যালারি</a></li>
+                    <li><a href="faq.html">জিজ্ঞাসা</a></li>
                     <li><a href="contact.html">যোগাযোগ</a></li>
-                    <li><a href="faq.html">জিজ্ঞাসা ও উত্তর</a></li>
                     <li><a href="downloads.html">ডাউনলোড</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div>
                 <h3>যোগাযোগ</h3>
-                <ul class="footer-links">
-                    <li><i class="fas fa-map-marker-alt"></i> কেরানীচালা, কাহালগাঁও, ফুলবাড়ীয়া, ময়মনসিংহ।</li>
-                    <li><i class="fas fa-phone-alt"></i>+৪৪০১৮৬২৬৩১২৪৩ </li>
-                    <li><i class="fas fa-envelope"></i> markazunnur@gmail.com </li>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i><span>কেরানীচালা, কাহালগাঁও, ফুলবাড়িয়া, ময়মনসিংহ।</span></li>
+                    <li><i class="fas fa-phone-alt"></i><span><a href="tel:+880186261243">+৮৮০১৮৬২৬১২৪৩</a><br><a href="tel:+8801775864306">+৮৮০১৭৭৫৮৬৪৩০৬</a></span></li>
+                    <li><i class="fas fa-envelope"></i><span><a href="mailto:markazunnur@gmail.com">markazunnur@gmail.com</a></span></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div>
                 <h3>সামাজিক যোগাযোগ</h3>
                 <ul class="footer-links">
                     <li><a href="https://www.facebook.com/share/1FT8ZxsGFk/"><i class="fab fa-facebook"></i> ফেসবুক</a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i> ইউটিউব</a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i> টুইটার</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> ইন্সটাগ্রাম</a></li>
                 </ul>
             </div>
         </div>
-        <div class="copyright">
-            <p>কপিরাইট © ২০২৫ মারকাযুন-নূর মাদ্রাসা। সকল স্বত্ব সংরক্ষিত।</p>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>কপিরাইট © ২০২৬ মারকাযুন-নূর মাদ্রাসা। সকল স্বত্ব সংরক্ষিত।</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-<script src="assets/js/script.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
