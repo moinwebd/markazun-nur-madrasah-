@@ -1,0 +1,485 @@
+/* ============================================================
+   Academic Programs & Curriculum — Markazun-Nur Madrasah
+   Uses the existing design system from assets/css/style.css
+   (same variables, fonts, section titles and card language).
+   ============================================================ */
+
+/* Active navigation item */
+.nav-link.active {
+    color: var(--primary-green);
+}
+.nav-link.active::after {
+    width: 80%;
+}
+
+/* ---------- Page hero ---------- */
+.ac-hero {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-bg) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 230px 5% 70px;
+    position: relative;
+    overflow: hidden;
+}
+.ac-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.ac-breadcrumb {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: var(--light-gold);
+}
+.ac-breadcrumb a {
+    color: var(--light-gold);
+    text-decoration: none;
+}
+.ac-breadcrumb a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+.ac-breadcrumb span {
+    margin: 0 8px;
+}
+.ac-hero-title {
+    font-family: 'shohid';
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.ac-hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+/* ---------- Shared section helpers ---------- */
+.ac-section {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.ac-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 760px;
+    margin: -30px auto 50px;
+    line-height: 1.8;
+}
+.ac-note {
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+.ac-note i {
+    color: var(--primary-green);
+    margin-right: 6px;
+}
+
+/* ---------- Academic levels ---------- */
+.ac-level-group {
+    margin-bottom: 50px;
+}
+.ac-level-head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 30px var(--shadow);
+    border-right: 5px solid var(--gold);
+    margin-bottom: 25px;
+}
+.ac-level-icon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    border-radius: 50%;
+    background: var(--primary-green);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+.ac-level-head h3 {
+    font-size: 1.6rem;
+    color: var(--primary-green);
+    margin-bottom: 5px;
+}
+.ac-level-head p {
+    color: #666;
+    line-height: 1.7;
+}
+.ac-class-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+.ac-class-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px var(--shadow);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.ac-class-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--primary-green);
+}
+.ac-class-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px var(--shadow);
+}
+.ac-class-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    background: var(--light-green);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+.ac-class-card h4 {
+    font-size: 1.4rem;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+.ac-age {
+    display: inline-block;
+    background: var(--light-gold);
+    color: var(--dark-bg);
+    font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+}
+.ac-age i {
+    color: var(--primary-green);
+    margin-left: 4px;
+}
+.ac-class-card p:last-child {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ---------- Syllabus ---------- */
+.ac-syllabus {
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--shadow);
+}
+.ac-subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+.ac-subject-card {
+    background: var(--off-white);
+    border-radius: 15px;
+    padding: 30px 25px;
+    box-shadow: 0 5px 20px var(--shadow);
+    transition: all 0.3s ease;
+    border-top: 5px solid var(--primary-green);
+}
+.ac-subject-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px var(--shadow);
+}
+.ac-subject-card.ac-featured {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-bg) 100%);
+    color: var(--white);
+    border-top: 5px solid var(--gold);
+}
+.ac-subject-card.ac-featured h3 {
+    color: var(--white);
+}
+.ac-subject-card.ac-featured p {
+    color: #e8e8e8;
+}
+.ac-subject-card.ac-featured .ac-subject-highlight {
+    color: var(--light-gold);
+}
+.ac-subject-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--primary-green);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+}
+.ac-featured .ac-subject-icon {
+    background: var(--gold);
+    color: var(--dark-bg);
+}
+.ac-subject-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+.ac-subject-card p {
+    color: #555;
+    line-height: 1.8;
+}
+.ac-subject-highlight {
+    font-weight: 700;
+    color: var(--primary-green);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.ac-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+.ac-tags li {
+    background: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 6px 14px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* ---------- Pathway ---------- */
+.ac-pathway-badge {
+    display: inline-block;
+    background: var(--light-gold);
+    color: var(--dark-bg);
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 50px;
+    margin: 0 auto 40px;
+}
+#pathway {
+    text-align: center;
+}
+#pathway .ac-intro {
+    margin-bottom: 25px;
+}
+.ac-pathway {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: left;
+}
+.ac-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 30px var(--shadow);
+    text-align: left;
+}
+.ac-step-body {
+    flex: 1;
+    min-width: 0;
+}
+.ac-step-num {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    border-radius: 50%;
+    background: var(--primary-green);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.ac-step-body h3 {
+    font-size: 1.35rem;
+    color: var(--primary-green);
+    margin-bottom: 6px;
+}
+.ac-step-body p {
+    color: #555;
+    line-height: 1.8;
+}
+.ac-arrow {
+    text-align: center;
+    color: var(--gold);
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+.ac-branch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+.ac-branch {
+    background: var(--off-white);
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    padding: 20px 12px;
+    text-align: center;
+}
+.ac-branch-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    background: var(--primary-green);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.ac-branch h4 {
+    font-size: 1.2rem;
+    color: var(--primary-green);
+    margin-bottom: 4px;
+}
+.ac-branch p {
+    font-size: 0.95rem;
+    color: #666;
+}
+.ac-disclaimer {
+    max-width: 760px;
+    margin: 40px auto 0;
+    background: #fff8e1;
+    border: 1px solid var(--gold);
+    border-right: 5px solid var(--gold);
+    border-radius: 12px;
+    padding: 25px 30px;
+    text-align: left;
+}
+.ac-disclaimer h3 {
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+.ac-disclaimer h3 i {
+    color: var(--gold);
+    margin-left: 6px;
+}
+.ac-disclaimer p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ---------- CTA ---------- */
+.ac-cta {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-bg) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 70px 5%;
+}
+.ac-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+.ac-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+.ac-cta-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.ac-cta-link {
+    color: var(--light-gold);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.ac-cta-link:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* ---------- Homepage preview section ---------- */
+.curriculum-preview {
+    background: var(--white);
+}
+.curriculum-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 760px;
+    margin: -30px auto 10px;
+    line-height: 1.8;
+}
+.curriculum-more {
+    text-align: center;
+    margin-top: 45px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 992px) {
+    .ac-hero-title {
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 768px) {
+    .ac-hero {
+        padding: 130px 5% 55px;
+    }
+    .ac-hero-title {
+        font-size: 2rem;
+    }
+    .ac-hero-subtitle {
+        font-size: 1.1rem;
+    }
+    .ac-section {
+        padding: 60px 5%;
+    }
+    .ac-level-head {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+    }
+    .ac-step {
+        padding: 20px;
+    }
+    .ac-cta h2 {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 576px) {
+    .ac-hero-title {
+        font-size: 1.7rem;
+    }
+    .ac-branch-grid {
+        grid-template-columns: 1fr;
+    }
+    .ac-step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .ac-subject-card,
+    .ac-class-card {
+        padding: 25px 18px;
+    }
+}
