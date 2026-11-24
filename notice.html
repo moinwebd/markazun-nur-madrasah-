@@ -32,123 +32,157 @@
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/academic.css">
-<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
- <!-- Header & Navigation -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <div class="logo-img">
-                 <a href="index.html"><img src="assets/images/logo.svg" alt="মারকাযুন-নূর মাদ্রাসার লোগো"></a>
-                </div>
-                <div class="logo-text">মারকাযুন-নূর মাদ্রাসা</div>
-            </div>
-            <div class="mobile-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+<!-- Top bar -->
+<div class="topbar">
+    <div class="container">
+        <div class="topbar-left">
+            <span><i class="fas fa-phone-alt"></i><a href="tel:+880186261243">+৮৮০১৮৬২৬১২৪৩</a></span>
+            <span><i class="fas fa-envelope"></i><a href="mailto:markazunnur@gmail.com">markazunnur@gmail.com</a></span>
+        </div>
+        <div class="topbar-right">
+            <span><i class="fas fa-clock"></i>শনি–বৃহস্পতি: সকাল ৮:০০–বিকাল ৫:০০</span>
+            <span>শুক্রবার বন্ধ</span>
+        </div>
+    </div>
+</div>
+<!-- Header & Navigation -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="brand">
+            <img src="assets/images/logo.svg" alt="মারকাযুন-নূর মাদ্রাসার লোগো">
+            <span>
+                <span class="brand-name">মারকাযুন-নূর</span><br>
+                <span class="brand-sub">মহিলা মাদ্রাসা ও নূরানী কিন্ডারগার্টেন</span>
+            </span>
+        </a>
+        <button class="nav-toggle" aria-label="মেনু খুলুন" aria-expanded="false"><i class="fas fa-bars"></i></button>
+        <nav aria-label="প্রধান মেনু">
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">হোম</a></li>
                 <li><a href="about.html" class="nav-link">আমাদের সম্পর্কে</a></li>
-                <li><a href="index.html#courses" class="nav-link">শিক্ষা কার্যক্রম</a></li>
                 <li><a href="academic-programs.html" class="nav-link">পাঠক্রম</a></li>
-                <li><a href="teachers.html" class="nav-link">শিক্ষক পরিচিতি</a></li>
                 <li><a href="admission.html" class="nav-link">ভর্তি তথ্য</a></li>
-                <li><a href="notice.html" class="nav-link active">নোটিস বোর্ড</a></li>
+                <li><a href="fees.html" class="nav-link">ফি</a></li>
+                <li><a href="teachers.html" class="nav-link">শিক্ষক</a></li>
+                <li><a href="notice.html" class="nav-link active">নোটিস</a></li>
                 <li><a href="gallery.html" class="nav-link">গ্যালারি</a></li>
+                <li><a href="faq.html" class="nav-link">জিজ্ঞাসা</a></li>
                 <li><a href="contact.html" class="nav-link">যোগাযোগ</a></li>
             </ul>
-        </div>
-    </header>
-    <!-- Page Hero -->
-    <section class="ac-hero">
-        <div class="hero-bg islamic-pattern"></div>
-        <div class="ac-hero-content">
-            <nav class="ac-breadcrumb" aria-label="ব্রেডক্রাম্ব">
-                <a href="index.html">হোম</a>
-                <span aria-hidden="true">/</span>
-                <span aria-current="page">নোটিস বোর্ড</span>
-            </nav>
-            <h1 class="ac-hero-title">নোটিস বোর্ড</h1>
-            <p class="ac-hero-subtitle">মাদ্রাসার সর্বশেষ নোটিশ, পরীক্ষা ও ভর্তি-সংক্রান্ত ঘোষণা।</p>
-        </div>
-    </section>
+        </nav>
+    </div>
+</header>
+<!-- Page Hero -->
+<section class="hero page-hero">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="ব্রেডক্রাম্ব">
+            <a href="index.html">হোম</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">নোটিস বোর্ড</span>
+        </nav>
+        <h1>নোটিস বোর্ড</h1>
+        <p class="hero-tagline">মাদ্রাসার সর্বশেষ নোটিশ, পরীক্ষা ও ভর্তি-সংক্রান্ত ঘোষণা।</p>
+    </div>
+</section>
 
-    <section class="ac-section">
-        <h2 class="section-title">সর্বশেষ নোটিশ</h2>
-        <div class="notice-container">
-            <div class="notice-list">
-                <div class="notice-item">
-                    <div class="notice-date">০৪ ডিসেম্বর</div>
-                    <div class="notice-text">বাৎসরিক হিসাব ২০২৫ ইং।<a href="assets/notice/বাৎসরিক-হিসাব-২০২৫.pdf" download>ডাউনলোড করুন</a> </div>
-                </div>
-                <div class="notice-item">
-                    <div class="notice-date">০৪ ডিসেম্বর</div>
-                    <div class="notice-text">আসন্ন বার্ষিক পরীক্ষার নোটিশ প্রকাশিত হয়েছে।<a href="assets/notice/exam-notice.pdf" download>ডাউনলোড করুন</a> </div>
-                </div>
-                <div class="notice-item">
-                    <div class="notice-date">২৩ নভেম্বর</div>
-                    <div class="notice-text">মাদ্রাসার বার্ষিক মাহফিল<a href="assets/notice/mahfil.jpg" download>ডাউনলোড করুন</a> </div>
-                </div>
-                <div class="notice-item">
-                    <div class="notice-date">২৫ ডিসেম্বর</div>
-                    <div class="notice-text">২৮ ডিসেম্বর থেকে ভর্তি শুরু<a href="assets/notice/admission-form.pdf" download>ডাউনলোড করুন</a> </div>
-                </div>
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <p class="eyebrow">ঘোষণা</p>
+            <h2 class="section-title">সর্বশেষ নোটিশ</h2>
+            <div class="title-rule"></div>
+            <p class="section-intro">মাদ্রাসার সর্বশেষ নোটিশ, পরীক্ষা ও ভর্তি-সংক্রান্ত ঘোষণা।</p>
+        </div>
+        <div class="notice-list">
+            <div class="notice-item">
+                <div class="notice-date"><span class="day">০৪</span><span class="month">ডিসেম্বর</span></div>
+                <div class="notice-text">বাৎসরিক হিসাব ২০২৫ ইং।<br><a href="assets/notice/বাৎসরিক-হিসাব-২০২৫.pdf" download><i class="fas fa-download"></i> ডাউনলোড করুন</a></div>
+            </div>
+            <div class="notice-item">
+                <div class="notice-date"><span class="day">০৪</span><span class="month">ডিসেম্বর</span></div>
+                <div class="notice-text">আসন্ন বার্ষিক পরীক্ষার নোটিশ প্রকাশিত হয়েছে।<br><a href="assets/notice/exam-notice.pdf" download><i class="fas fa-download"></i> ডাউনলোড করুন</a></div>
+            </div>
+            <div class="notice-item">
+                <div class="notice-date"><span class="day">২৩</span><span class="month">নভেম্বর</span></div>
+                <div class="notice-text">মাদ্রাসার বার্ষিক মাহফিল।<br><a href="assets/notice/mahfil.jpg" download><i class="fas fa-download"></i> ডাউনলোড করুন</a></div>
+            </div>
+            <div class="notice-item">
+                <div class="notice-date"><span class="day">২৫</span><span class="month">ডিসেম্বর</span></div>
+                <div class="notice-text">২৮ ডিসেম্বর থেকে ভর্তি শুরু।<br><a href="assets/notice/admission-form.pdf" download><i class="fas fa-download"></i> ভর্তি ফর্ম ডাউনলোড করুন</a></div>
             </div>
         </div>
-        <p class="ac-note"><i class="fas fa-circle-info"></i> নতুন নোটিশ প্রকাশিত হলে এখানে যুক্ত করা হবে। বিস্তারিত জানতে মাদ্রাসা অফিসে যোগাযোগ করুন।</p>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-col">
+        <p class="note-line"><i class="fas fa-circle-info"></i> নতুন নোটিশ প্রকাশিত হলে এখানে যুক্ত করা হবে। বিস্তারিত জানতে মাদ্রাসা অফিসে যোগাযোগ করুন।</p>
+    </div>
+</section>
+<!-- CTA -->
+<section class="cta-band">
+    <div class="container">
+        <h2>নোটিশ-সংক্রান্ত প্রশ্ন আছে?</h2>
+        <p>যেকোনো নোটিশের বিস্তারিত জানতে সরাসরি আমাদের সঙ্গে যোগাযোগ করুন।</p>
+        <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-accent">যোগাযোগ করুন</a>
+            <a href="downloads.html" class="btn btn-outline">ডাউনলোড সেন্টার</a>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
                 <h3>মারকাযুন-নূর মহিলা মাদ্রাসা ও নূরানী কিন্ডারগার্টেন</h3>
-                <p>ইসলামী শিক্ষা ও নৈতিক মূল্যবোধের সমন্বয়ে গড়ে উঠা একটি আধুনিক শিক্ষাপ্রতিষ্ঠান। ২০২৫ সাল থেকে নিরলসভাবে ইসলামী শিক্ষা বিস্তারে কাজ করে যাচ্ছে।</p>
+                <p>ইসলামী শিক্ষা ও নৈতিক মূল্যবোধের সমন্বয়ে গড়ে উঠা একটি আধুনিক শিক্ষাপ্রতিষ্ঠান। ২০২৫ সাল থেকে কুরআন-সুন্নাহ ভিত্তিক শিক্ষা বিস্তারে কাজ করে যাচ্ছে।</p>
             </div>
-            <div class="footer-col">
+            <div>
                 <h3>দ্রুত লিংক</h3>
                 <ul class="footer-links">
                     <li><a href="index.html">হোম</a></li>
                     <li><a href="about.html">আমাদের সম্পর্কে</a></li>
-                    <li><a href="index.html#courses">শিক্ষা কার্যক্রম</a></li>
                     <li><a href="academic-programs.html">পাঠক্রম</a></li>
-                    <li><a href="teachers.html">শিক্ষক পরিচিতি</a></li>
                     <li><a href="admission.html">ভর্তি তথ্য</a></li>
-                    <li><a href="notice.html">নোটিস বোর্ড</a></li>
+                    <li><a href="fees.html">ফি</a></li>
+                    <li><a href="teachers.html">শিক্ষক</a></li>
+                    <li><a href="notice.html">নোটিস</a></li>
                     <li><a href="gallery.html">গ্যালারি</a></li>
+                    <li><a href="faq.html">জিজ্ঞাসা</a></li>
                     <li><a href="contact.html">যোগাযোগ</a></li>
-                    <li><a href="faq.html">জিজ্ঞাসা ও উত্তর</a></li>
                     <li><a href="downloads.html">ডাউনলোড</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div>
                 <h3>যোগাযোগ</h3>
-                <ul class="footer-links">
-                    <li><i class="fas fa-map-marker-alt"></i> কেরানীচালা, কাহালগাঁও, ফুলবাড়ীয়া, ময়মনসিংহ।</li>
-                    <li><i class="fas fa-phone-alt"></i>+৪৪০১৮৬২৬৩১২৪৩ </li>
-                    <li><i class="fas fa-envelope"></i> markazunnur@gmail.com </li>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i><span>কেরানীচালা, কাহালগাঁও, ফুলবাড়িয়া, ময়মনসিংহ।</span></li>
+                    <li><i class="fas fa-phone-alt"></i><span><a href="tel:+880186261243">+৮৮০১৮৬২৬১২৪৩</a><br><a href="tel:+8801775864306">+৮৮০১৭৭৫৮৬৪৩০৬</a></span></li>
+                    <li><i class="fas fa-envelope"></i><span><a href="mailto:markazunnur@gmail.com">markazunnur@gmail.com</a></span></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div>
                 <h3>সামাজিক যোগাযোগ</h3>
                 <ul class="footer-links">
                     <li><a href="https://www.facebook.com/share/1FT8ZxsGFk/"><i class="fab fa-facebook"></i> ফেসবুক</a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i> ইউটিউব</a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i> টুইটার</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> ইন্সটাগ্রাম</a></li>
                 </ul>
             </div>
         </div>
-        <div class="copyright">
-            <p>কপিরাইট © ২০২৫ মারকাযুন-নূর মাদ্রাসা। সকল স্বত্ব সংরক্ষিত।</p>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>কপিরাইট © ২০২৬ মারকাযুন-নূর মাদ্রাসা। সকল স্বত্ব সংরক্ষিত।</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-<script src="assets/js/script.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>

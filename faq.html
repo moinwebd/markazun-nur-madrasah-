@@ -32,146 +32,304 @@
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/academic.css">
-<link rel="stylesheet" href="assets/css/pages.css">
-</head>
+<link rel="stylesheet" href="assets/css/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "মাদ্রাসাটি কোথায় অবস্থিত?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "মাদ্রাসার ঠিকানা: কেরানীচালা, কাহালগাঁও, ফুলবাড়িয়া, ময়মনসিংহ।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "মাদ্রাসাটি কবে প্রতিষ্ঠিত হয়?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "মারকাযুন-নূর মহিলা মাদ্রাসা ও নূরানী কিন্ডারগার্টেন ২০২৫ সালে প্রতিষ্ঠিত হয়।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "কোন কোন বিভাগে পড়ানো হয়?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "মাদ্রাসায় দুটি বিভাগ রয়েছে — নূরানী কিন্ডারগার্টেন (৪ বছর মেয়াদি) এবং কিতাব বিভাগ (মহিলা, ৬ বছর মেয়াদি)। বিস্তারিত পাঠক্রম দেখুন শিক্ষা কার্যক্রম ও পাঠক্রম পাতায়।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "নূরানী কিন্ডারগার্টেনে ভর্তির বয়স ও ক্লাসের সময় কত?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "নূরানী কিন্ডারগার্টেনে ভর্তির বয়সসীমা ৪–৮ বছর এবং ক্লাসের সময় সকাল ৮:০০–১২:০০।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "কিতাব বিভাগে (মহিলা) ভর্তির বয়স ও ক্লাসের সময় কত?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "কিতাব বিভাগে (মহিলা) ভর্তির বয়স ৮+ বছর এবং ক্লাসের সময় সকাল ৮:০০–৪:০০।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "কোন বোর্ডের সিলেবাস অনুসরণ করা হয়?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "নূরানী কিন্ডারগার্টেনে ইকরা বোর্ডের সিলেবাস এবং কিতাব বিভাগে বেফাক বোর্ডের সিলেবাস অনুসরণ করা হয়।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "পাঠক্রমে কী কী বিষয় পড়ানো হয়?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "হিফযুল কুরআন (ন্যূনতম ৫ পারা), আরবি ও ইংরেজি ভাষা, ইসলামিক স্টাডিজ এবং বাংলা, গণিত, বিজ্ঞান, সাধারণ জ্ঞানসহ সাধারণ বিষয় পড়ানো হয়।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ভর্তির জন্য কী কী কাগজপত্র প্রয়োজন?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "জন্ম নিবন্ধন সনদ, ২ কপি পাসপোর্ট সাইজ ছবি, পূর্ববর্তী ক্লাসের মার্কশীট (যদি থাকে) এবং অভিভাবকের জাতীয় পরিচয়পত্রের ফটোকপি।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ভর্তির প্রক্রিয়া কেমন?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ভর্তির ধাপগুলো: (১) অফিস থেকে ভর্তি ফর্ম সংগ্রহ করুন, (২) প্রয়োজনীয় কাগজপত্র সংযুক্ত করুন, (৩) নির্ধারিত ফি জমা দিন, (৪) মৌখিক পরীক্ষায় অংশগ্রহণ করুন, (৫) ভর্তি নিশ্চিতকরণ পত্র গ্রহণ করুন।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ভর্তি ও ক্লাস শুরুর তারিখ কবে?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ভর্তি শুরু ১লা ডিসেম্বর, ভর্তি শেষ ৩১শে ডিসেম্বর এবং ক্লাস শুরু ১০ই জানুয়ারি। বিস্তারিত ও সর্বশেষ তথ্যের জন্য অফিসে যোগাযোগ করুন।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ভর্তি ফি ও মাসিক বেতন কত?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ভর্তি ফি, মাসিক বেতন ও অন্যান্য ফি-সংক্রান্ত তথ্য এখনো প্রকাশিত হয়নি। নিশ্চিত হওয়ার পর ফি তালিকা পাতায় জানানো হবে — ভর্তির আগে অফিসে যোগাযোগ করে সর্বশেষ তথ্য জেনে নিন।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "দশম শ্রেণির পর দাখিল পরীক্ষা দেওয়া যাবে কি?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "দশম শ্রেণি সম্পন্ন করার পর বাংলাদেশ মাদরাসা শিক্ষা বোর্ডের অধীনে দাখিল পরীক্ষায় অংশগ্রহণের সুযোগ প্রতিষ্ঠানের পরিকল্পিত শিক্ষাপথে রয়েছে। বোর্ড অধিভুক্তি আনুষ্ঠানিকভাবে নিশ্চিত হওয়ার পর বিস্তারিত জানানো হবে।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "মাদ্রাসার সঙ্গে যোগাযোগ করব কীভাবে?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ফোন: +৮৮০১৮৬২৬১২৪৩, +৮৮০১৭৭৫৮৬৪৩০৬; ইমেইল: markazunnur@gmail.com; অফিস সময়: শনিবার–বৃহস্পতিবার সকাল ৮:০০–বিকাল ৫:০০, শুক্রবার বন্ধ।"
+      }
+    }
+  ]
+}
+</script></head>
 <body>
- <!-- Header & Navigation -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <div class="logo-img">
-                 <a href="index.html"><img src="assets/images/logo.svg" alt="মারকাযুন-নূর মাদ্রাসার লোগো"></a>
-                </div>
-                <div class="logo-text">মারকাযুন-নূর মাদ্রাসা</div>
-            </div>
-            <div class="mobile-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+<!-- Top bar -->
+<div class="topbar">
+    <div class="container">
+        <div class="topbar-left">
+            <span><i class="fas fa-phone-alt"></i><a href="tel:+880186261243">+৮৮০১৮৬২৬১২৪৩</a></span>
+            <span><i class="fas fa-envelope"></i><a href="mailto:markazunnur@gmail.com">markazunnur@gmail.com</a></span>
+        </div>
+        <div class="topbar-right">
+            <span><i class="fas fa-clock"></i>শনি–বৃহস্পতি: সকাল ৮:০০–বিকাল ৫:০০</span>
+            <span>শুক্রবার বন্ধ</span>
+        </div>
+    </div>
+</div>
+<!-- Header & Navigation -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="brand">
+            <img src="assets/images/logo.svg" alt="মারকাযুন-নূর মাদ্রাসার লোগো">
+            <span>
+                <span class="brand-name">মারকাযুন-নূর</span><br>
+                <span class="brand-sub">মহিলা মাদ্রাসা ও নূরানী কিন্ডারগার্টেন</span>
+            </span>
+        </a>
+        <button class="nav-toggle" aria-label="মেনু খুলুন" aria-expanded="false"><i class="fas fa-bars"></i></button>
+        <nav aria-label="প্রধান মেনু">
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">হোম</a></li>
                 <li><a href="about.html" class="nav-link">আমাদের সম্পর্কে</a></li>
-                <li><a href="index.html#courses" class="nav-link">শিক্ষা কার্যক্রম</a></li>
                 <li><a href="academic-programs.html" class="nav-link">পাঠক্রম</a></li>
-                <li><a href="teachers.html" class="nav-link">শিক্ষক পরিচিতি</a></li>
                 <li><a href="admission.html" class="nav-link">ভর্তি তথ্য</a></li>
-                <li><a href="notice.html" class="nav-link">নোটিস বোর্ড</a></li>
+                <li><a href="fees.html" class="nav-link">ফি</a></li>
+                <li><a href="teachers.html" class="nav-link">শিক্ষক</a></li>
+                <li><a href="notice.html" class="nav-link">নোটিস</a></li>
                 <li><a href="gallery.html" class="nav-link">গ্যালারি</a></li>
+                <li><a href="faq.html" class="nav-link active">জিজ্ঞাসা</a></li>
                 <li><a href="contact.html" class="nav-link">যোগাযোগ</a></li>
             </ul>
-        </div>
-    </header>
-    <!-- Page Hero -->
-    <section class="ac-hero">
-        <div class="hero-bg islamic-pattern"></div>
-        <div class="ac-hero-content">
-            <nav class="ac-breadcrumb" aria-label="ব্রেডক্রাম্ব">
-                <a href="index.html">হোম</a>
-                <span aria-hidden="true">/</span>
-                <span aria-current="page">জিজ্ঞাসা ও উত্তর</span>
-            </nav>
-            <h1 class="ac-hero-title">জিজ্ঞাসা ও উত্তর</h1>
-            <p class="ac-hero-subtitle">ভর্তি, পাঠক্রম ও মাদ্রাসা সম্পর্কে সাধারণ জিজ্ঞাসা।</p>
-        </div>
-    </section>
+        </nav>
+    </div>
+</header>
+<!-- Page Hero -->
+<section class="hero page-hero">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="ব্রেডক্রাম্ব">
+            <a href="index.html">হোম</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">জিজ্ঞাসা ও উত্তর</span>
+        </nav>
+        <h1>জিজ্ঞাসা ও উত্তর</h1>
+        <p class="hero-tagline">ভর্তি, পাঠক্রম ও মাদ্রাসা সম্পর্কে সাধারণ জিজ্ঞাসা।</p>
+    </div>
+</section>
 
-    <section class="ac-section">
-        <h2 class="section-title">সাধারণ জিজ্ঞাসা</h2>
-        <p class="ac-intro">নিচের প্রশ্নগুলোর উত্তর যাচাইকৃত তথ্যের ভিত্তিতে দেওয়া হয়েছে।</p>
+<section class="section">
+    <div class="container">
+        <div class="section-head text-center">
+            <p class="eyebrow centered">জিজ্ঞাসা ও উত্তর</p>
+            <h2 class="section-title centered">সাধারণ জিজ্ঞাসা</h2>
+            <div class="title-rule centered"></div>
+            <p class="section-intro centered">নিচের প্রশ্নগুলোর উত্তর যাচাইকৃত তথ্যের ভিত্তিতে দেওয়া হয়েছে।</p>
+        </div>
         <div class="faq-list">
-            <details>
+            <details class="faq-item">
                 <summary>মাদ্রাসাটি কোথায় অবস্থিত?</summary>
-                <p>মাদ্রাসার ঠিকানা: কেরানীচালা, কাহালগাঁও, ফুলবাড়িয়া, ময়মনসিংহ।</p>
+                <p class="faq-answer">মাদ্রাসার ঠিকানা: কেরানীচালা, কাহালগাঁও, ফুলবাড়িয়া, ময়মনসিংহ।</p>
             </details>
-            <details>
+            <details class="faq-item">
                 <summary>মাদ্রাসাটি কবে প্রতিষ্ঠিত হয়?</summary>
-                <p>মারকাযুন-নূর মহিলা মাদ্রাসা ও নূরানী কিন্ডারগার্টেন ২০২৫ সালে প্রতিষ্ঠিত হয়।</p>
+                <p class="faq-answer">মারকাযুন-নূর মহিলা মাদ্রাসা ও নূরানী কিন্ডারগার্টেন ২০২৫ সালে প্রতিষ্ঠিত হয়।</p>
             </details>
-            <details>
+            <details class="faq-item">
                 <summary>কোন কোন বিভাগে পড়ানো হয়?</summary>
-                <p>মাদ্রাসায় দুটি বিভাগ রয়েছে — নূরানী কিন্ডারগার্টেন (০৪ বছর) এবং কিতাব বিভাগ (মহিলা, ০৬ বছর)। বিস্তারিত পাঠক্রম দেখুন শিক্ষা কার্যক্রম ও পাঠক্রম পাতায়।</p>
+                <p class="faq-answer">মাদ্রাসায় দুটি বিভাগ রয়েছে — নূরানী কিন্ডারগার্টেন (৪ বছর মেয়াদি) এবং কিতাব বিভাগ (মহিলা, ৬ বছর মেয়াদি)। বিস্তারিত পাঠক্রম দেখুন শিক্ষা কার্যক্রম ও পাঠক্রম পাতায়।</p>
             </details>
-            <details>
+            <details class="faq-item">
                 <summary>নূরানী কিন্ডারগার্টেনে ভর্তির বয়স ও ক্লাসের সময় কত?</summary>
-                <p>নূরানী কিন্ডারগার্টেনে ভর্তির বয়সসীমা ৪–৮ বছর এবং শ্রেণীর সময় সকাল ৮:০০–১২:০০।</p>
+                <p class="faq-answer">নূরানী কিন্ডারগার্টেনে ভর্তির বয়সসীমা ৪–৮ বছর এবং ক্লাসের সময় সকাল ৮:০০–১২:০০।</p>
             </details>
-            <details>
+            <details class="faq-item">
                 <summary>কিতাব বিভাগে (মহিলা) ভর্তির বয়স ও ক্লাসের সময় কত?</summary>
-                <p>কিতাব বিভাগে (মহিলা) ভর্তির বয়স ৮+ বছর এবং শ্রেণীর সময় সকাল ৮:০০–৪:০০।</p>
+                <p class="faq-answer">কিতাব বিভাগে (মহিলা) ভর্তির বয়স ৮+ বছর এবং ক্লাসের সময় সকাল ৮:০০–৪:০০।</p>
             </details>
-            <details>
+            <details class="faq-item">
+                <summary>কোন বোর্ডের সিলেবাস অনুসরণ করা হয়?</summary>
+                <p class="faq-answer">নূরানী কিন্ডারগার্টেনে ইকরা বোর্ডের সিলেবাস এবং কিতাব বিভাগে বেফাক বোর্ডের সিলেবাস অনুসরণ করা হয়।</p>
+            </details>
+            <details class="faq-item">
+                <summary>পাঠক্রমে কী কী বিষয় পড়ানো হয়?</summary>
+                <p class="faq-answer">হিফযুল কুরআন (ন্যূনতম ৫ পারা), আরবি ও ইংরেজি ভাষা, ইসলামিক স্টাডিজ এবং বাংলা, গণিত, বিজ্ঞান, সাধারণ জ্ঞানসহ সাধারণ বিষয় পড়ানো হয়।</p>
+            </details>
+            <details class="faq-item">
                 <summary>ভর্তির জন্য কী কী কাগজপত্র প্রয়োজন?</summary>
-                <p>জন্ম নিবন্ধন সনদ, ২ কপি পাসপোর্ট সাইজ ছবি, পূর্ববর্তী ক্লাসের মার্কশীট (যদি থাকে) এবং অভিভাবকের জাতীয় পরিচয়পত্রের ফটোকপি।</p>
+                <p class="faq-answer">জন্ম নিবন্ধন সনদ, ২ কপি পাসপোর্ট সাইজ ছবি, পূর্ববর্তী ক্লাসের মার্কশীট (যদি থাকে) এবং অভিভাবকের জাতীয় পরিচয়পত্রের ফটোকপি।</p>
             </details>
-            <details>
+            <details class="faq-item">
                 <summary>ভর্তির প্রক্রিয়া কেমন?</summary>
-                <p>ভর্তির ধাপগুলো: (১) অফিস থেকে ভর্তি ফর্ম সংগ্রহ করুন, (২) প্রয়োজনীয় কাগজপত্র সংযুক্ত করুন, (৩) নির্ধারিত ফি জমা দিন, (৪) মৌখিক পরীক্ষায় অংশগ্রহণ করুন, (৫) ভর্তি নিশ্চিতকরণ পত্র গ্রহণ করুন।</p>
+                <p class="faq-answer">ভর্তির ধাপগুলো: (১) অফিস থেকে ভর্তি ফর্ম সংগ্রহ করুন, (২) প্রয়োজনীয় কাগজপত্র সংযুক্ত করুন, (৩) নির্ধারিত ফি জমা দিন, (৪) মৌখিক পরীক্ষায় অংশগ্রহণ করুন, (৫) ভর্তি নিশ্চিতকরণ পত্র গ্রহণ করুন।</p>
             </details>
-            <details>
+            <details class="faq-item">
                 <summary>ভর্তি ও ক্লাস শুরুর তারিখ কবে?</summary>
-                <p>ভর্তি শুরুর তারিখ ১লা ডিসেম্বর, ভর্তি শেষের তারিখ ৩১শে ডিসেম্বর এবং ক্লাস শুরুর তারিখ ১০ই জানুয়ারি। বিস্তারিত ও সর্বশেষ তথ্যের জন্য অফিসে যোগাযোগ করুন।</p>
+                <p class="faq-answer">ভর্তি শুরু ১লা ডিসেম্বর, ভর্তি শেষ ৩১শে ডিসেম্বর এবং ক্লাস শুরু ১০ই জানুয়ারি। বিস্তারিত ও সর্বশেষ তথ্যের জন্য অফিসে যোগাযোগ করুন।</p>
             </details>
-            <details>
+            <details class="faq-item">
                 <summary>ভর্তি ফি ও মাসিক বেতন কত?</summary>
-                <p>ভর্তি ফি, মাসিক বেতন ও অন্যান্য ফি-সংক্রান্ত তথ্য এখনো প্রকাশিত হয়নি। নিশ্চিত হওয়ার পর এখানে জানানো হবে — ভর্তির আগে অফিসে যোগাযোগ করে সর্বশেষ তথ্য জেনে নিন।</p>
+                <p class="faq-answer">ভর্তি ফি, মাসিক বেতন ও অন্যান্য ফি-সংক্রান্ত তথ্য এখনো প্রকাশিত হয়নি। নিশ্চিত হওয়ার পর ফি তালিকা পাতায় জানানো হবে — ভর্তির আগে অফিসে যোগাযোগ করে সর্বশেষ তথ্য জেনে নিন।</p>
             </details>
-            <details>
+            <details class="faq-item">
+                <summary>দশম শ্রেণির পর দাখিল পরীক্ষা দেওয়া যাবে কি?</summary>
+                <p class="faq-answer">দশম শ্রেণি সম্পন্ন করার পর বাংলাদেশ মাদরাসা শিক্ষা বোর্ডের অধীনে দাখিল পরীক্ষায় অংশগ্রহণের সুযোগ প্রতিষ্ঠানের পরিকল্পিত শিক্ষাপথে রয়েছে। বোর্ড অধিভুক্তি আনুষ্ঠানিকভাবে নিশ্চিত হওয়ার পর বিস্তারিত জানানো হবে।</p>
+            </details>
+            <details class="faq-item">
                 <summary>মাদ্রাসার সঙ্গে যোগাযোগ করব কীভাবে?</summary>
-                <p>ফোন: +৮৮০১৮৬২৬১২৪৩, +৮৮০১৭৭৫৮৬৪৩০৬; ইমেইল: markazunnur@gmail.com; অফিস সময়: শনিবার–বৃহস্পতিবার সকাল ৮:০০–বিকাল ৫:০০, শুক্রবার বন্ধ।</p>
+                <p class="faq-answer">ফোন: +৮৮০১৮৬২৬১২৪৩, +৮৮০১৭৭৫৮৬৪৩০৬; ইমেইল: markazunnur@gmail.com; অফিস সময়: শনিবার–বৃহস্পতিবার সকাল ৮:০০–বিকাল ৫:০০, শুক্রবার বন্ধ।</p>
             </details>
         </div>
-        <p class="ac-note"><i class="fas fa-circle-info"></i> আপনার প্রশ্নের উত্তর এখানে না পেলে মাদ্রাসা অফিসে যোগাযোগ করুন — ফোন: +৮৮০১৮৬২৬১২৪৩, +৮৮০১৭৭৫৮৬৪৩০৬।</p>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-col">
+        <p class="note-line text-center"><i class="fas fa-circle-info"></i> আপনার প্রশ্নের উত্তর এখানে না পেলে মাদ্রাসা অফিসে যোগাযোগ করুন — ফোন: <a href="tel:+880186261243">+৮৮০১৮৬২৬১২৪৩</a>, <a href="tel:+8801775864306">+৮৮০১৭৭৫৮৬৪৩০৬</a>।</p>
+    </div>
+</section>
+<!-- CTA -->
+<section class="cta-band">
+    <div class="container">
+        <h2>আরও জানতে চান?</h2>
+        <p>ভর্তি, পাঠক্রম বা ফি-সংক্রান্ত যেকোনো প্রশ্নে সরাসরি আমাদের সঙ্গে যোগাযোগ করুন।</p>
+        <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-accent">যোগাযোগ করুন</a>
+            <a href="admission.html" class="btn btn-outline">ভর্তি তথ্য দেখুন</a>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
                 <h3>মারকাযুন-নূর মহিলা মাদ্রাসা ও নূরানী কিন্ডারগার্টেন</h3>
-                <p>ইসলামী শিক্ষা ও নৈতিক মূল্যবোধের সমন্বয়ে গড়ে উঠা একটি আধুনিক শিক্ষাপ্রতিষ্ঠান। ২০২৫ সাল থেকে নিরলসভাবে ইসলামী শিক্ষা বিস্তারে কাজ করে যাচ্ছে।</p>
+                <p>ইসলামী শিক্ষা ও নৈতিক মূল্যবোধের সমন্বয়ে গড়ে উঠা একটি আধুনিক শিক্ষাপ্রতিষ্ঠান। ২০২৫ সাল থেকে কুরআন-সুন্নাহ ভিত্তিক শিক্ষা বিস্তারে কাজ করে যাচ্ছে।</p>
             </div>
-            <div class="footer-col">
+            <div>
                 <h3>দ্রুত লিংক</h3>
                 <ul class="footer-links">
                     <li><a href="index.html">হোম</a></li>
                     <li><a href="about.html">আমাদের সম্পর্কে</a></li>
-                    <li><a href="index.html#courses">শিক্ষা কার্যক্রম</a></li>
                     <li><a href="academic-programs.html">পাঠক্রম</a></li>
-                    <li><a href="teachers.html">শিক্ষক পরিচিতি</a></li>
                     <li><a href="admission.html">ভর্তি তথ্য</a></li>
-                    <li><a href="notice.html">নোটিস বোর্ড</a></li>
+                    <li><a href="fees.html">ফি</a></li>
+                    <li><a href="teachers.html">শিক্ষক</a></li>
+                    <li><a href="notice.html">নোটিস</a></li>
                     <li><a href="gallery.html">গ্যালারি</a></li>
+                    <li><a href="faq.html">জিজ্ঞাসা</a></li>
                     <li><a href="contact.html">যোগাযোগ</a></li>
-                    <li><a href="faq.html">জিজ্ঞাসা ও উত্তর</a></li>
                     <li><a href="downloads.html">ডাউনলোড</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div>
                 <h3>যোগাযোগ</h3>
-                <ul class="footer-links">
-                    <li><i class="fas fa-map-marker-alt"></i> কেরানীচালা, কাহালগাঁও, ফুলবাড়ীয়া, ময়মনসিংহ।</li>
-                    <li><i class="fas fa-phone-alt"></i>+৪৪০১৮৬২৬৩১২৪৩ </li>
-                    <li><i class="fas fa-envelope"></i> markazunnur@gmail.com </li>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i><span>কেরানীচালা, কাহালগাঁও, ফুলবাড়িয়া, ময়মনসিংহ।</span></li>
+                    <li><i class="fas fa-phone-alt"></i><span><a href="tel:+880186261243">+৮৮০১৮৬২৬১২৪৩</a><br><a href="tel:+8801775864306">+৮৮০১৭৭৫৮৬৪৩০৬</a></span></li>
+                    <li><i class="fas fa-envelope"></i><span><a href="mailto:markazunnur@gmail.com">markazunnur@gmail.com</a></span></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div>
                 <h3>সামাজিক যোগাযোগ</h3>
                 <ul class="footer-links">
                     <li><a href="https://www.facebook.com/share/1FT8ZxsGFk/"><i class="fab fa-facebook"></i> ফেসবুক</a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i> ইউটিউব</a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i> টুইটার</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> ইন্সটাগ্রাম</a></li>
                 </ul>
             </div>
         </div>
-        <div class="copyright">
-            <p>কপিরাইট © ২০২৫ মারকাযুন-নূর মাদ্রাসা। সকল স্বত্ব সংরক্ষিত।</p>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>কপিরাইট © ২০২৬ মারকাযুন-নূর মাদ্রাসা। সকল স্বত্ব সংরক্ষিত।</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-<script src="assets/js/script.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
