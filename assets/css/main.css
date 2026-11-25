@@ -21,22 +21,22 @@
   --color-primary: #3066be;
   --color-primary-dark: #26539f;
   --color-primary-deep: #1d4078;
-  --color-primary-rgb: 48 102 190;
+  --color-primary-rgb: 48, 102, 190;
   --color-accent: #119da4;
   --color-accent-dark: #0c7f85;
-  --color-accent-rgb: 17 157 164;
+  --color-accent-rgb: 17, 157, 164;
   --color-light: #6d9dc5;
   --color-mid: #80ded9;
-  --color-mid-rgb: 128 222 217;
+  --color-mid-rgb: 128, 222, 217;
   --color-pale: #aeecef;
   --color-bg: #ffffff;
-  --color-bg-rgb: 255 255 255;
+  --color-bg-rgb: 255, 255, 255;
   --color-text: #29272a;
   --color-text-soft: #4c4741;
   --color-muted: #77716d;
   --color-border: #d7e5ef;
   --color-on-primary: #ffffff;
-  --color-on-primary-rgb: 255 255 255;
+  --color-on-primary-rgb: 255, 255, 255;
   --color-on-primary-soft: #d3e6f7;
   --color-on-accent: #ffffff;
 
